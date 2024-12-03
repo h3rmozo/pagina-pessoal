@@ -1,0 +1,145 @@
+.gradiant-background {
+  background: rgb(25,49,163);
+background: linear-gradient(90deg, rgba(25,49,163,1) 14%, rgba(12,60,168,1) 55%, rgba(33,69,190,1) 100%);
+}
+
+#theme-toggle {
+    border: none; /* Remove a borda */
+    background: none; /* Remove o fundo, se necessário */
+    outline: none; /* Remove a borda de foco, se necessário */
+    padding: 0;
+  }
+  
+  /* Se o botão ainda tiver uma borda quando focado, você pode adicionar: */
+  #theme-toggle:focus {
+    outline: none; /* Remove a borda de foco */
+  }
+  
+  #Contato {
+    color: #f8f9fa; /* Cor semelhante ao text-light do Bootstrap */
+  }
+  
+
+  .email {
+    color: #ffffff; /* Cor do texto normal, branco para contraste */
+    text-decoration: underline; /* Remove o sublinhado padrão dos links */
+  }
+  
+  .email:hover {
+    color: #e3e3e3; /* Cor do texto no hover, um tom de cinza claro para um efeito sutil */
+    text-decoration: underline; /* Adiciona sublinhado no hover para destacar o link */
+  }
+  
+  .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Espaço para a borda inferior */
+    color: #f8f9fa; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Altura da borda */
+    background-color: #f8f9fa; /* Cor da borda */
+    transition: width 0.3s ease; /* Transição suave */
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Expande a borda para preencher o link ao passar o mouse */
+  }
+  
+  .text-test {
+    font-family: monospace;
+    color: rgb(55, 75, 255); /* Cor inicial */
+}
+
+.sobre{
+    border-bottom: 2px solid rgb(55, 75, 255);
+}
+
+img{
+    height: 100px;
+}
+
+section#sobre {
+	background-color: #f8f9fa;
+}
+
+
+
+.nav-link:hover {
+  color: #f8f9fa !important; /* Mesma cor de text-light (light color do Bootstrap) */
+}
+
+
+.text-indent {
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* Adiciona uma borda ou espaçamento entre o nome e os itens no modo colapsado */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    border-top: 2px solid #f8f9fa; /* Adiciona uma borda no topo da navbar */
+    padding-top: 1rem; /* Espaçamento para a borda */
+  }
+  
+  .navbar-brand {
+    margin-bottom: 1rem; /* Adiciona espaço abaixo do nome "Nicolas Hermoso" */
+  }
+}
+
+.border-sec{
+  border-bottom: 1px solid rgb(55, 75, 255);
+}
+
+.collapse {
+  display: none;
+}
+.collapse.show {
+  display: block;
+}
+
+#conhecimentos-gerais-header {
+  cursor: pointer; /* Faz com que o cursor mude para uma mãozinha ao passar sobre o <h2> */
+  margin-bottom: 1rem; /* Adiciona um espaço abaixo do <h2> */
+}
+
+.custom-inline-block {
+  display: inline-block;
+}
+
+
+.navbar-nav .nav-link {
+  color: #f8f9fa; /* Cor do texto dos links de navegação */
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Garante que a cor não mude ao clicar ou passar o mouse */
+}
+
+#toggleButton {
+  background-color: rgb(55, 75, 255);
+  border: none;
+}

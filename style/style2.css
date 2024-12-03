@@ -1,0 +1,198 @@
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#profile-pic {
+    width: 300px;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding-bottom: 4rem; /* Ajuste este valor para a altura do seu footer */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.full-height-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex-fill {
+    flex: 1;
+}
+
+/* Estilos padrão (modo escuro) */
+.icon-link {
+    color: #ffffff; /* Cor dos ícones no modo escuro */
+}
+
+/* Estilos para o modo claro */
+[data-bs-theme="light"] .icon-link {
+    color: #333333; /* Cor dos ícones no modo claro (escura) */
+}
+
+/* Estilos para o botão de tema */
+#theme-toggle {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+#theme-toggle i {
+    font-size: 1.25rem;
+}
+
+
+
+/* Garantir que o botão de tema esteja centralizado verticalmente */
+.navbar .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para o item do botão de tema */
+.nav-item.theme-toggle-item {
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    padding-left: 15px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 991.98px) {
+    .nav-item.theme-toggle-item {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        padding-top: 10px;
+        margin-top: 10px;
+        padding-left: 0;
+        margin-left: 0;
+        display: block;
+    }
+
+    .navbar-nav .theme-toggle-item button {
+        margin-left: 0;
+        text-align: left;
+    }
+}
+
+/* Estilos para o botão de tema no modo claro */
+[data-bs-theme="light"] #theme-toggle {
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo igual ao hover */
+    color: #333; /* Cor do ícone/texto escura */
+    border-radius: 50%; /* Garantir que o botão permaneça arredondado */
+}
+
+[data-bs-theme="light"] #theme-toggle.btn:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo mais clara ao passar o mouse */
+}
+
+/* Estilos para o botão de tema no modo escuro */
+[data-bs-theme="dark"] #theme-toggle {
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo no modo escuro */
+    color: #ffffff; /* Cor do ícone/texto clara no modo escuro */
+    border-radius: 50%; /* Garantir que o botão permaneça arredondado */
+}
+
+/* Remover efeito de hover para o botão de tema no modo escuro */
+[data-bs-theme="dark"] #theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Manter a mesma cor de fundo */
+}
+
+/* Remove a borda de foco dos itens da navegação */
+.nav-link:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: none; /* Remove qualquer sombra adicionada ao foco */
+}
+
+/* Ajusta o estilo de foco dos itens da navegação */
+.nav-link:focus {
+    outline: 2px solid #000000; /* Cor e espessura da borda de foco */
+    outline-offset: 2px; /* Distância da borda de foco em relação ao elemento */
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2); /* Sombra para indicar o foco */
+}
+
+/* Estilos para o ícone do botão de colapso */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilos padrão (modo escuro) */
+.navbar-toggler {
+    background-color: #333333; /* Cor de fundo no modo escuro */
+    border: 1px solid #444444; /* Cor da borda no modo escuro */
+}
+
+[data-bs-theme="light"] .navbar-toggler {
+    background-color: #ffffff; /* Cor de fundo no modo claro */
+    border: 1px solid #dddddd; /* Cor da borda no modo claro */
+}
+
+/* Estilo do ícone do botão no modo claro */
+[data-bs-theme="light"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ajustar o estilo do botão no hover */
+.navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo do botão de colapso */
+.navbar-toggler {
+    background-color: #333; /* Cor de fundo escura para o tema claro */
+    border: none; /* Remove a borda padrão */
+    box-shadow: none; /* Remove qualquer sombra que possa aparecer ao clicar */
+}
+
+/* Estilo do ícone do botão de colapso */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ajustar o botão conforme o tema claro */
+[data-bs-theme="light"] .navbar-toggler {
+    background-color: #fff; /* Cor de fundo clara para o tema escuro */
+}
+
+/* Ajustar o ícone do botão no tema claro */
+[data-bs-theme="light"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilo do botão ao passar o mouse */
+.navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo ao passar o mouse */
+}
+
+/* Remover borda e estilo extra ao focar no botão */
+.navbar-toggler:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: none; /* Remove a sombra padrão */
+}
